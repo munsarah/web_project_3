@@ -1,0 +1,124 @@
+.place {
+  max-width: 984px;
+  padding: 0px;
+  display: grid;
+  grid-gap: 48px 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "title website"
+    "image paragraph"
+    "button paragraph";
+}
+
+.place__title {
+  margin: 0px auto;
+  max-width: 460px;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  grid-area: title;
+}
+
+.place__website {
+  margin: 0px;
+  max-width: 456px;
+  align-self: flex-end;
+  grid-area: website;
+}
+
+.place__website_label {
+  padding-bottom: 8px;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.place__website_artist {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.place__image {
+  padding: 0px;
+  width: 100%;
+}
+
+.place__paragraphs {
+  grid-area: paragraph;
+  max-width: 484px;
+}
+
+.place__paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.place__paragraph:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1170px) {
+  .place {
+    margin: 0px 24px 72px 24px;
+    grid-gap: 48px 28px;
+    grid-template-rows: auto auto 1fr;
+  }
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .place__paragraph {
+    font-size: 16px;
+  }
+
+  .place__image {
+    margin: 0px;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    margin: 0px auto 50px;
+  }
+  .place__title {
+    padding-left: 16px;
+    margin: 0px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__website {
+    padding-left: 10px;
+    max-width: 288px;
+    align-self: flex-start;
+    margin: 0px;
+  }
+  .place__website__artist {
+    margin: 0px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .place__paragraph {
+    line-height: 163%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
