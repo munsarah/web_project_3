@@ -26,3 +26,9 @@
 .button:hover {
   background: #0063d2;
 }
+
+@media screen and (max-width: 550px) {
+  .place__button {
+    margin-left: 16px;
+  }
+}
