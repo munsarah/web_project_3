@@ -7,7 +7,6 @@
 @media screen and (max-width: 1000px) {
   .header {
     padding-bottom: 91px;
-    padding-top: 34px;
   }
   .header__logo {
     max-height: 70px;
