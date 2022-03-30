@@ -48,14 +48,18 @@
     margin: 64px 16px 90px;
   }
   .intro__title {
-    width: auto;
+    width: 100%;
     font-size: 32px;
     line-height: 35px;
   }
   .intro__text {
     line-height: 30px;
+    width: 100%;
   }
   .intro__author {
     line-height: 34px;
+  }
+  .intro__description {
+    width: 100%;
   }
 }
