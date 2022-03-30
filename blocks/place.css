@@ -68,11 +68,11 @@
   margin-bottom: 0px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .place {
     margin: 0px 24px 72px;
-    column-gap: 48px;
-    row-gap: 28px;
+    column-gap: 28px;
+    row-gap: 48px;
   }
   .place__title {
     margin: 0px;
@@ -114,5 +114,8 @@
     line-height: 163%;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .place__button {
+    margin-left: 16px;
   }
 }

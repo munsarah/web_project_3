@@ -13,7 +13,7 @@
 
 .intro__text {
   margin: 0px;
-  width: auto;
+  max-width: 720px;
   padding-bottom: 10px;
   font-weight: 400;
   font-size: 24px;
@@ -21,7 +21,7 @@
 }
 .intro__author {
   margin: 0px;
-  width: auto;
+  max-width: 720px;
   padding-bottom: 32px;
   font-weight: 400;
   font-size: 24px;
@@ -30,7 +30,7 @@
 }
 .intro__description {
   margin: 0px;
-  width: auto;
+  max-width: 720px;
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
@@ -46,7 +46,6 @@
 @media screen and (max-width: 550px) {
   .intro {
     margin: 64px 16px 90px;
-    max-width: 100vw;
   }
   .intro__title {
     width: auto;
