@@ -69,6 +69,7 @@
 @media screen and (max-width: 550px) {
   .cover {
     min-height: 254px;
+    margin-top: 64px;
   }
 
   .cover__group {
